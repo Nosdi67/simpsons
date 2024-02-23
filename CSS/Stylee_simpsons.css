@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+ }
+
+#wrapper{
+    padding:0 20%;
+} 
+
+figure img{
+    width: 100%;
+}
+
+header p{
+    font-size: xx-large;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+nav{
+display: flex;
+flex-direction: column;
+border: solid red 10px;
+margin-right: 80%;
+align-items: center;
+background-color: blue;
+font-size: medium;
+ 
+}
+a{
+    color: white;
+}
+
