@@ -39,6 +39,8 @@ main{
 
 nav{
 display: flex;
+flex-direction: column;
+justify-content: space-evenly;
 border: solid #447bb8 2px;
 border-radius: 3px;
 padding: 10px 40px;
@@ -49,6 +51,7 @@ height: fit-content;
 margin-top: 30px;
 margin-left: 10px;
 justify-content: center;
+
  
 }
 article{
@@ -78,7 +81,7 @@ aside{
     text-align: justify;
     gap: 15px;
     height: fit-content;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-left: 10px;
     margin-bottom: 20px;
     margin-top: 30px;
@@ -99,6 +102,7 @@ aside img{
 aside p{
     font-family: 'Comics', sans-serif;
     font-size: 10px;
+    width: fit-content;
     
 }
 
@@ -109,10 +113,14 @@ a{
     font-family: 'Comics', sans-serif;
     font-size:10px;
     
+    
 }
 li{
     color:#447bb8;
-
+    
+}
+ul{
+    gap: 10px;
 }
 
 footer{
@@ -126,7 +134,37 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
+    #wrapper{
+        padding: 0px;
+        margin: 0px;
+    }
+
     main {
       flex-direction: column;
+      
+    }
+    nav{
+        display: flex;
+        margin: 0px;
+        
+       
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header figure{
+        margin: 0px;
+    }
+    article{
+        padding: 0px 20px;
+    }
+    aside figure {
+        display: flex;
+        flex-direction: row;
+        flex-flow:column wrap ;
+        justify-content: center;
+        align-content: center;
     }
   }
